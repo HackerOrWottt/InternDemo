@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Navbar -->
     <header class="navbar">
-      <div class="logo">COMPANY <span>business tagline</span></div>
+      <div class="logo">
+        <img
+          src = "Assests/logo.png"
+          alt="logo"
+        />
+        <div class="logo-text">
+          <h1>COMPANY</h1>
+          <span>business tagline</span>
+        </div>
+      </div>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -26,7 +41,7 @@
     <section class="hero">
       <div class="hero-text">
         <h1>
-          Your Resume <span class="highlight">Deserves A Yes</span> Let’s Make
+          Your Resume <br><span class="highlight">Deserves A Yes</span> Let’s <br> Make
           It Happen
         </h1>
         <p>
@@ -34,9 +49,10 @@
           Get An ATS-Optimized Resume Crafted By HR Experts To Help You Land
           More Interviews.
         </p>
+        <br />
         <div class="hero-buttons">
-          <a href="#" class="btn-primary">Resume Packages</a>
-          <a href="#" class="btn-secondary">Contact Us</a>
+          <a href="#" class="btn-secondary">Resume Packages</a>
+          <a href="#" class="btn-primary">Contact Us</a>
         </div>
       </div>
       <div class="hero-image">
@@ -44,8 +60,21 @@
           src="https://i.pinimg.com/736x/8c/18/d6/8c18d616f6b3f010345654854c2d8650.jpg"
           alt="Student"
         />
-        <div class="card rating">⭐ 4.9 Instructor Rating</div>
-        <div class="card count">260+ Online Resumes Created</div>
+        <div class="card rating">
+          <img
+            src="data:image/png;base64,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"
+          />
+          <div class="rating-text">
+            ⭐⭐⭐⭐⭐
+            <p>4.9 Instructor Rating</p>
+          </div>
+        </div>
+        <div class="card count">
+          <img
+            src="https://st.depositphotos.com/3538103/5166/i/450/depositphotos_51662749-stock-photo-graduation-cap-icon.jpg"
+          />
+          <p>260+ Online Resumes <br> Created</p>
+        </div>
       </div>
     </section>
 
@@ -59,7 +88,7 @@
 
       <div class="feature-grid">
         <div class="feature-card">
-          <i class="fa-solid fa-file-lines fa-2x"></i>
+          <img src = "Assests/resume.png" alt = "resume icon" />
           <h3>A Resume That Passes ATS Filters</h3>
           <p>
             Get a professionally written, keyword-optimized resume that lands in
@@ -68,7 +97,7 @@
         </div>
 
         <div class="feature-card">
-          <i class="fa-solid fa-envelope-open-text fa-2x"></i>
+          <img src = "Assests/coverLetter.png" alt = "coverLetter" />
           <h3>A Cover Letter That Gets Read</h3>
           <p>
             Stand out with a cover letter that goes directly to the role and
@@ -77,7 +106,7 @@
         </div>
 
         <div class="feature-card">
-          <i class="fa-brands fa-linkedin fa-2x"></i>
+          <img src = "Assests/linkedin.png" alt = "linkedin" />
           <h3>A LinkedIn Profile That Works For You</h3>
           <p>
             Attract the right eyes, start conversations, and show up in
@@ -86,7 +115,7 @@
         </div>
 
         <div class="feature-card">
-          <i class="fa-solid fa-comments fa-2x"></i>
+          <img src = "Assests/interview.png" alt = "interview" />
           <h3>Interview Confidence</h3>
           <p>
             Interview prep with real HR professionals so you speak confidently
